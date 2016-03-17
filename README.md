@@ -243,3 +243,7 @@ function parse_git_branch {
 }
 export PS1='\u@\h \[\033[0;36m\]\w \[\033[0;32m\]$(parse_git_branch)\[\033[0m\]$ '
 ```
+
+#### About
+
+This cheatsheet is a fork of [git-cheat-sheet](https://github.com/jakubpawlowicz/git-cheat-sheet) from [Jakub Pawlowicz](https://github.com/jakubpawlowicz)
