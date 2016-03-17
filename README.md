@@ -226,6 +226,12 @@ git config user.name "Jakub Pawlowicz"
 git config user.email '<email>'
 ```
 
+#### Proxy server
+```shell
+git config --global http.proxy http://<proxyuser>:<proxypwd>@<proxy.server.com>:<proxyport>
+git config --global https.proxy http://<proxyuser>:<proxypwd>@<proxy.server.com>:<proxyport>
+```
+
 ####
 ```shell
 git config --global color.diff auto
