@@ -250,6 +250,12 @@ function parse_git_branch {
 export PS1='\u@\h \[\033[0;36m\]\w \[\033[0;32m\]$(parse_git_branch)\[\033[0m\]$ '
 ```
 
+#### Tools
+
+* [GitKraken](http://www.gitkraken.com/) - The downright luxurious Git client for Windows, Mac and Linux. Cross-platform, 100% standalone, and free.
+* [SourceTree](https://www.atlassian.com/software/sourcetree/overview) - SourceTree is a powerful Git and Mercurial desktop client for developers on Mac or Windows.
+* [git-flow](https://github.com/nvie/gitflow) - A collection of Git extensions to provide high-level repository operations for Vincent Driessen's [branching model](http://nvie.com/posts/a-successful-git-branching-model/).
+
 #### About
 
 This cheatsheet is a fork of [git-cheat-sheet](https://github.com/jakubpawlowicz/git-cheat-sheet) from [Jakub Pawlowicz](https://github.com/jakubpawlowicz)
