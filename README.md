@@ -1,5 +1,7 @@
 # <img src="https://rawgit.com/lennonjesus/git-cheatsheet/master/git-cheatsheet-logo.svg" width="400px" />
 
+#### *A list of useful git commands*
+
 #### Go one step back in history
 ```shell
 git checkout @~1
@@ -163,7 +165,7 @@ git fetch origin pull/1234/head:local-branch-name
 git rev-parse --short <sha>
 ```
 
-#### My aliases
+#### Useful aliases
 ```shell
 git config --global alias.aa "add --all"
 git config --global alias.ai "add --interactive"
