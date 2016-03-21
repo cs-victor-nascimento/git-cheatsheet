@@ -1,4 +1,4 @@
-# git-cheatsheet
+# <img src="https://rawgit.com/lennonjesus/git-cheatsheet/master/git-cheatsheet-logo.svg" width="400px" />
 
 #### Go one step back in history
 ```shell
