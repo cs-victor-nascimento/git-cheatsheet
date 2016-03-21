@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Git-cheatsheet by lennonjesus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Git-cheatsheet</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/lennonjesus/git-cheatsheet" class="btn">View on GitHub</a>
+      <a href="https://github.com/lennonjesus/git-cheatsheet/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/lennonjesus/git-cheatsheet/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="" class="anchor" href="#" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><img src="https://rawgit.com/lennonjesus/git-cheatsheet/master/git-cheatsheet-logo.svg" width="400px">
+</h1>
+
+<h4>
+<a id="go-one-step-back-in-history" class="anchor" href="#go-one-step-back-in-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Go one step back in history</h4>
+
+<div class="highlight highlight-source-shell"><pre>git checkout @~1</pre></div>
+
+<h4>
+<a id="show-commit-changes" class="anchor" href="#show-commit-changes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Show commit changes</h4>
+
+<div class="highlight highlight-source-shell"><pre>git show <span class="pl-k">&lt;</span>commit-sha<span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="push-master-branch-to-origin" class="anchor" href="#push-master-branch-to-origin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Push master branch to origin</h4>
+
+<div class="highlight highlight-source-shell"><pre>git push origin master</pre></div>
+
+<h4>
+<a id="list-all-branches" class="anchor" href="#list-all-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List all branches</h4>
+
+<div class="highlight highlight-source-shell"><pre>git branch -a</pre></div>
+
+<h4>
+<a id="list-remote-branches" class="anchor" href="#list-remote-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List remote branches</h4>
+
+<div class="highlight highlight-source-shell"><pre>git branch -r</pre></div>
+
+<h4>
+<a id="sync-list-of-remote-branches" class="anchor" href="#sync-list-of-remote-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sync list of remote branches</h4>
+
+<div class="highlight highlight-source-shell"><pre>git remote update</pre></div>
+
+<h4>
+<a id="checkout-remote-branch-into-local-repository" class="anchor" href="#checkout-remote-branch-into-local-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Checkout remote branch into local repository</h4>
+
+<div class="highlight highlight-source-shell"><pre>git checkout -t -b <span class="pl-k">&lt;</span><span class="pl-k">local</span>-name<span class="pl-k">&gt;</span> <span class="pl-k">&lt;</span>remote-name<span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="create-a-branch" class="anchor" href="#create-a-branch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create a branch</h4>
+
+<div class="highlight highlight-source-shell"><pre>git checkout -b <span class="pl-k">&lt;</span>name<span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="push-local-branch-to-remote" class="anchor" href="#push-local-branch-to-remote" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Push local branch to remote</h4>
+
+<div class="highlight highlight-source-shell"><pre>git push origin <span class="pl-k">&lt;</span>remote-name<span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="merge-two-branches" class="anchor" href="#merge-two-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Merge two branches</h4>
+
+<div class="highlight highlight-source-shell"><pre>git checkout <span class="pl-k">&lt;</span>target<span class="pl-k">&gt;</span>
+git merge <span class="pl-k">&lt;</span><span class="pl-c1">source</span><span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="merge-two-branches-with-squash" class="anchor" href="#merge-two-branches-with-squash" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Merge two branches with squash</h4>
+
+<div class="highlight highlight-source-shell"><pre>git checkout <span class="pl-k">&lt;</span>target<span class="pl-k">&gt;</span>
+git merge --squash <span class="pl-k">&lt;</span><span class="pl-c1">source</span><span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="see-what-branches-are-merged-into-master" class="anchor" href="#see-what-branches-are-merged-into-master" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>See what branches are merged into master</h4>
+
+<div class="highlight highlight-source-shell"><pre>git branch -r --merged master</pre></div>
+
+<h4>
+<a id="ignore-files-globally" class="anchor" href="#ignore-files-globally" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ignore files globally</h4>
+
+<p><a href="https://help.github.com/articles/ignoring-files">https://help.github.com/articles/ignoring-files</a></p>
+
+<h4>
+<a id="pull-changes-from-the-server--rebase-equivalent-of-git-stash-save--git-pull--git-stash-pop--git-push--push" class="anchor" href="#pull-changes-from-the-server--rebase-equivalent-of-git-stash-save--git-pull--git-stash-pop--git-push--push" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>pull changes from the server + rebase (equivalent of git stash save &amp;&amp; git pull &amp;&amp; git stash pop &amp;&amp; git push) + push</h4>
+
+<div class="highlight highlight-source-shell"><pre>git pull --rebase <span class="pl-k">&amp;&amp;</span> git push</pre></div>
+
+<h4>
+<a id="set-up-git-inet-server" class="anchor" href="#set-up-git-inet-server" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Set up git inet server</h4>
+
+<div class="highlight highlight-source-shell"><pre>git daemon --base-path /home/git --verbose</pre></div>
+
+<h4>
+<a id="add-remote-origin" class="anchor" href="#add-remote-origin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Add remote origin</h4>
+
+<div class="highlight highlight-source-shell"><pre>git remote add origin <span class="pl-k">&lt;</span>url<span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="fix-branch-not-tracking-anything" class="anchor" href="#fix-branch-not-tracking-anything" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fix 'branch not tracking anything'</h4>
+
+<div class="highlight highlight-source-shell"><pre>git config --add branch.master.remote origin
+git config --add branch.master.merge refs/heads/master</pre></div>
+
+<h4>
+<a id="extract-patch-from-a-given-file" class="anchor" href="#extract-patch-from-a-given-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Extract patch from a given file</h4>
+
+<div class="highlight highlight-source-shell"><pre>git diff --patch-with-raw rev1 rev2 patched_file <span class="pl-k">&gt;</span> diff_file</pre></div>
+
+<h4>
+<a id="diff-with-paging" class="anchor" href="#diff-with-paging" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Diff with paging</h4>
+
+<div class="highlight highlight-source-shell"><pre>GIT_PAGER=<span class="pl-s"><span class="pl-pds">'</span>less -r<span class="pl-pds">'</span></span> git dc</pre></div>
+
+<h4>
+<a id="apply-a-patch" class="anchor" href="#apply-a-patch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Apply a patch</h4>
+
+<div class="highlight highlight-source-shell"><pre>git apply diff_file</pre></div>
+
+<h4>
+<a id="publish-branch" class="anchor" href="#publish-branch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Publish branch</h4>
+
+<div class="highlight highlight-source-shell"><pre>git push origin <span class="pl-k">&lt;</span>name<span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="delete-remote-branch" class="anchor" href="#delete-remote-branch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Delete remote branch</h4>
+
+<div class="highlight highlight-source-shell"><pre>git push origin :<span class="pl-k">&lt;</span>name<span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="cherry-pick-a-commit" class="anchor" href="#cherry-pick-a-commit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cherry-pick a commit</h4>
+
+<div class="highlight highlight-source-shell"><pre>git cherry-pick -n <span class="pl-k">&lt;</span>sha<span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="revert-commit" class="anchor" href="#revert-commit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Revert commit</h4>
+
+<div class="highlight highlight-source-shell"><pre>git revert -n <span class="pl-k">&lt;</span>sha<span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="reset-head-to-n-commits-back" class="anchor" href="#reset-head-to-n-commits-back" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reset HEAD to n commits back</h4>
+
+<div class="highlight highlight-source-shell"><pre>git reset --hard HEAD~<span class="pl-k">&lt;</span>n<span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="squash-n-last-commits" class="anchor" href="#squash-n-last-commits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Squash N last commits</h4>
+
+<div class="highlight highlight-source-shell"><pre>git rebase --interactive --autosquash HEAD~N</pre></div>
+
+<h4>
+<a id="search-git-log-commits" class="anchor" href="#search-git-log-commits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>search git log commits</h4>
+
+<div class="highlight highlight-source-shell"><pre>git log -S “free text”</pre></div>
+
+<h4>
+<a id="remove-file-from-history-can-use-git-rm--rf-to-remove-files-recursively" class="anchor" href="#remove-file-from-history-can-use-git-rm--rf-to-remove-files-recursively" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>remove file from history (can use 'git rm -rf…' to remove files recursively)</h4>
+
+<div class="highlight highlight-source-shell"><pre>git filter-branch --index-filter <span class="pl-s"><span class="pl-pds">'</span>git rm --cached --ignore-unmatch &lt;path to file&gt;<span class="pl-pds">'</span></span> --prune-empty --tag-name-filter cat -- --all
+git push origin master --force
+rm -rf .git/refs/original/
+git reflog expire --expire=now --all
+git gc --prune=now
+git gc --aggressive --prune=now</pre></div>
+
+<h4>
+<a id="prune-history" class="anchor" href="#prune-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Prune history</h4>
+
+<div class="highlight highlight-source-shell"><pre>git gc
+git gc --aggressive
+git prune</pre></div>
+
+<h4>
+<a id="checkout-github-pr" class="anchor" href="#checkout-github-pr" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Checkout GitHub PR</h4>
+
+<div class="highlight highlight-source-shell"><pre>git fetch origin pull/1234/head:<span class="pl-k">local</span>-branch-name</pre></div>
+
+<h4>
+<a id="convert-long-sha-to-short-one" class="anchor" href="#convert-long-sha-to-short-one" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Convert long sha to short one</h4>
+
+<div class="highlight highlight-source-shell"><pre>git rev-parse --short <span class="pl-k">&lt;</span>sha<span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="my-aliases" class="anchor" href="#my-aliases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>My aliases</h4>
+
+<div class="highlight highlight-source-shell"><pre>git config --global <span class="pl-c1">alias</span>.aa <span class="pl-s"><span class="pl-pds">"</span>add --all<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.ai <span class="pl-s"><span class="pl-pds">"</span>add --interactive<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.b <span class="pl-s"><span class="pl-pds">"</span>branch<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.ba <span class="pl-s"><span class="pl-pds">"</span>branch -a<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.c <span class="pl-s"><span class="pl-pds">"</span>commit<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.ca <span class="pl-s"><span class="pl-pds">"</span>commit --amend<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.cf <span class="pl-s"><span class="pl-pds">'</span>!sh -c "git commit --fixup $@"<span class="pl-pds">'</span></span>
+git config --global <span class="pl-c1">alias</span>.co <span class="pl-s"><span class="pl-pds">"</span>checkout<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.col <span class="pl-s"><span class="pl-pds">'</span>!sh -c "git checkout -b $@"<span class="pl-pds">'</span></span>
+git config --global <span class="pl-c1">alias</span>.cor <span class="pl-s"><span class="pl-pds">'</span>!sh -c "git checkout --track -b $@ origin/$@"<span class="pl-pds">'</span></span>
+git config --global <span class="pl-c1">alias</span>.cp <span class="pl-s"><span class="pl-pds">"</span>cherry-pick<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.cpa <span class="pl-s"><span class="pl-pds">"</span>cherry-pick --abort<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.cpc <span class="pl-s"><span class="pl-pds">"</span>cherry-pick --continue<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.cs <span class="pl-s"><span class="pl-pds">'</span>!sh -c "git commit --squash $@"<span class="pl-pds">'</span></span>
+git config --global <span class="pl-c1">alias</span>.d <span class="pl-s"><span class="pl-pds">"</span>diff<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.dc <span class="pl-s"><span class="pl-pds">"</span>diff --cached<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.ds <span class="pl-s"><span class="pl-pds">"</span>diff --stat<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.dsc <span class="pl-s"><span class="pl-pds">"</span>diff --stat --cached<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.fpr <span class="pl-s"><span class="pl-pds">'</span>!sh -c "git fetch origin pull/$@/head:$@-pr"<span class="pl-pds">'</span></span>
+git config --global <span class="pl-c1">alias</span>.l <span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.lf <span class="pl-s"><span class="pl-pds">"</span>log --follow<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.lg <span class="pl-s"><span class="pl-pds">"</span>log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue&lt;%an&gt;%Creset' --abbrev-commit --date=relative --all<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.m <span class="pl-s"><span class="pl-pds">"</span>merge<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.mb <span class="pl-s"><span class="pl-pds">"</span>merge-base master HEAD<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.ms <span class="pl-s"><span class="pl-pds">"</span>merge --squash<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.pl <span class="pl-s"><span class="pl-pds">"</span>pull<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.ps <span class="pl-s"><span class="pl-pds">"</span>push<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.psc <span class="pl-s"><span class="pl-pds">'</span>!sh -c "git push --set-upstream origin \$(git rev-parse --abbrev-ref HEAD)"<span class="pl-pds">'</span></span>
+git config --global <span class="pl-c1">alias</span>.psd <span class="pl-s"><span class="pl-pds">'</span>!sh -c "git push origin :\$(git rev-parse --abbrev-ref HEAD)"<span class="pl-pds">'</span></span>
+git config --global <span class="pl-c1">alias</span>.psf <span class="pl-s"><span class="pl-pds">"</span>push --force-with-lease<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.r <span class="pl-s"><span class="pl-pds">"</span>reset HEAD<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.rb <span class="pl-s"><span class="pl-pds">"</span>rebase<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.rba <span class="pl-s"><span class="pl-pds">"</span>rebase --abort<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.rbc <span class="pl-s"><span class="pl-pds">"</span>rebase --continue<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.rbi <span class="pl-s"><span class="pl-pds">"</span>rebase --interactive --autosquash<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.rbm <span class="pl-s"><span class="pl-pds">"</span>rebase --interactive --autosquash origin/master<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.rh <span class="pl-s"><span class="pl-pds">"</span>reset --hard<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.rs <span class="pl-s"><span class="pl-pds">"</span>reset --soft<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.s <span class="pl-s"><span class="pl-pds">"</span>status<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.sh <span class="pl-s"><span class="pl-pds">"</span>show<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.shs <span class="pl-s"><span class="pl-pds">"</span>show --stat<span class="pl-pds">"</span></span>
+git config --global <span class="pl-c1">alias</span>.st <span class="pl-s"><span class="pl-pds">"</span>stash<span class="pl-pds">"</span></span></pre></div>
+
+<h4>
+<a id="global-git-ignore" class="anchor" href="#global-git-ignore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Global git ignore</h4>
+
+<div class="highlight highlight-source-shell"><pre>git config --global core.excludesfile <span class="pl-k">~</span>/.gitignore</pre></div>
+
+<h4>
+<a id="global-username--email" class="anchor" href="#global-username--email" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Global username &amp; email</h4>
+
+<div class="highlight highlight-source-shell"><pre>git config --global user.name <span class="pl-s"><span class="pl-pds">"</span>Jakub Pawlowicz<span class="pl-pds">"</span></span>
+git config --global user.email <span class="pl-s"><span class="pl-pds">'</span>&lt;email&gt;<span class="pl-pds">'</span></span></pre></div>
+
+<h4>
+<a id="local-username--email" class="anchor" href="#local-username--email" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Local username &amp; email</h4>
+
+<div class="highlight highlight-source-shell"><pre>git config user.name <span class="pl-s"><span class="pl-pds">"</span>Jakub Pawlowicz<span class="pl-pds">"</span></span>
+git config user.email <span class="pl-s"><span class="pl-pds">'</span>&lt;email&gt;<span class="pl-pds">'</span></span></pre></div>
+
+<h4>
+<a id="proxy-server" class="anchor" href="#proxy-server" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Proxy server</h4>
+
+<div class="highlight highlight-source-shell"><pre>git config --global http.proxy http://<span class="pl-k">&lt;</span>proxyuser<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>proxypwd<span class="pl-k">&gt;</span>@<span class="pl-k">&lt;</span>proxy.server.com<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>proxyport<span class="pl-k">&gt;</span>
+git config --global https.proxy http://<span class="pl-k">&lt;</span>proxyuser<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>proxypwd<span class="pl-k">&gt;</span>@<span class="pl-k">&lt;</span>proxy.server.com<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>proxyport<span class="pl-k">&gt;</span></pre></div>
+
+<div class="highlight highlight-source-shell"><pre>git config --global color.diff auto
+git config --global color.status auto
+git config --global color.branch auto</pre></div>
+
+<h4>
+<a id="branch-name-and-merge-status-in-bash-prompt-should-go-to-local-or-global-bash-profile" class="anchor" href="#branch-name-and-merge-status-in-bash-prompt-should-go-to-local-or-global-bash-profile" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Branch name and merge status in bash prompt (should go to local or global bash profile)</h4>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-k">function</span> <span class="pl-en">parse_git_dirty</span> {
+  [[ <span class="pl-s"><span class="pl-pds">$(</span>git status <span class="pl-k">2&gt;</span> /dev/null <span class="pl-k">|</span> tail -n1<span class="pl-pds">)</span></span> <span class="pl-k">!=</span> <span class="pl-s"><span class="pl-pds">"</span>nothing to commit, working directory clean<span class="pl-pds">"</span></span> ]] <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">"</span>*<span class="pl-pds">"</span></span>
+}
+<span class="pl-k">function</span> <span class="pl-en">parse_git_branch</span> {
+  git branch --no-color <span class="pl-k">2&gt;</span> /dev/null <span class="pl-k">|</span> sed -e <span class="pl-s"><span class="pl-pds">'</span>/^[^*]/d<span class="pl-pds">'</span></span> -e <span class="pl-s"><span class="pl-pds">"</span>s/* \(.*\)/[\1<span class="pl-s"><span class="pl-pds">$(</span>parse_git_dirty<span class="pl-pds">)</span></span>]/<span class="pl-pds">"</span></span>
+}
+<span class="pl-k">export</span> PS1=<span class="pl-s"><span class="pl-pds">'</span>\u@\h \[\033[0;36m\]\w \[\033[0;32m\]$(parse_git_branch)\[\033[0m\]$ <span class="pl-pds">'</span></span></pre></div>
+
+<h4>
+<a id="tools" class="anchor" href="#tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tools</h4>
+
+<ul>
+<li>
+<a href="http://www.gitkraken.com/">GitKraken</a> - The downright luxurious Git client for Windows, Mac and Linux. Cross-platform, 100% standalone, and free.</li>
+<li>
+<a href="https://www.atlassian.com/software/sourcetree/overview">SourceTree</a> - SourceTree is a powerful Git and Mercurial desktop client for developers on Mac or Windows.</li>
+<li>
+<a href="https://github.com/nvie/gitflow">git-flow</a> - A collection of Git extensions to provide high-level repository operations for Vincent Driessen's <a href="http://nvie.com/posts/a-successful-git-branching-model/">branching model</a>.</li>
+</ul>
+
+<h4>
+<a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h4>
+
+<p>This cheatsheet is a fork of <a href="https://github.com/jakubpawlowicz/git-cheat-sheet">git-cheat-sheet</a> from <a href="https://github.com/jakubpawlowicz">Jakub Pawlowicz</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/lennonjesus/git-cheatsheet">Git-cheatsheet</a> is maintained by <a href="https://github.com/lennonjesus">lennonjesus</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
