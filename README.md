@@ -29,6 +29,11 @@ git branch -a
 git branch -r
 ```
 
+#### List all tags
+```shell
+git tag -l
+```
+
 #### Sync list of remote branches
 ```shell
 git remote update
