@@ -29,6 +29,21 @@ git branch -a
 git branch -r
 ```
 
+### Push sample-tag to origin
+```shell
+git push origin sample-tag
+```
+
+### Delete a tag from remote repository
+```shell
+git push origin :sample-tag
+```
+
+### Delete a tag from local repository
+```shell
+git tag -d sample-tag
+```
+
 #### List all tags
 ```shell
 git tag -l
