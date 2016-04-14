@@ -256,7 +256,12 @@ git config --global http.proxy http://<proxyuser>:<proxypwd>@<proxy.server.com>:
 git config --global https.proxy http://<proxyuser>:<proxypwd>@<proxy.server.com>:<proxyport>
 ```
 
-####
+#### Force git to clone with "https://" instead of "git://" urls (useful behind proxies)
+```shell
+git config --global url."https://".insteadOf git://
+```
+
+#### Color settings
 ```shell
 git config --global color.diff auto
 git config --global color.status auto
