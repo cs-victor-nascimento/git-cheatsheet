@@ -240,14 +240,19 @@ git config --global core.excludesfile ~/.gitignore
 
 #### Global username & email
 ```shell
-git config --global user.name "Jakub Pawlowicz"
-git config --global user.email '<email>'
+git config --global user.name "Lennon Jesus"
+git config --global user.email 'you@mail.com'
 ```
 
 #### Local username & email
 ```shell
-git config user.name "Jakub Pawlowicz"
-git config user.email '<email>'
+git config user.name "Lennon Jesus"
+git config user.email 'you@mail.com'
+```
+
+#### Cache Password (using git Credential Helper)
+```shell
+git config --global credential.helper cache
 ```
 
 #### Proxy server
