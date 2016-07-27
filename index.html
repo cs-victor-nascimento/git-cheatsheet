@@ -24,6 +24,13 @@
 </h1>
 
 <h4>
+<a id="a-list-of-useful-git-commands" class="anchor" href="#a-list-of-useful-git-commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>A list of useful git commands</em>
+</h4>
+
+<h6>
+<a id="contributions-are-welcome" class="anchor" href="#contributions-are-welcome" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributions are welcome!</h6>
+
+<h4>
 <a id="go-one-step-back-in-history" class="anchor" href="#go-one-step-back-in-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Go one step back in history</h4>
 
 <div class="highlight highlight-source-shell"><pre>git checkout @~1</pre></div>
@@ -47,6 +54,26 @@
 <a id="list-remote-branches" class="anchor" href="#list-remote-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List remote branches</h4>
 
 <div class="highlight highlight-source-shell"><pre>git branch -r</pre></div>
+
+<h3>
+<a id="push-sample-tag-to-origin" class="anchor" href="#push-sample-tag-to-origin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Push sample-tag to origin</h3>
+
+<div class="highlight highlight-source-shell"><pre>git push origin sample-tag</pre></div>
+
+<h3>
+<a id="delete-a-tag-from-remote-repository" class="anchor" href="#delete-a-tag-from-remote-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Delete a tag from remote repository</h3>
+
+<div class="highlight highlight-source-shell"><pre>git push origin :sample-tag</pre></div>
+
+<h3>
+<a id="delete-a-tag-from-local-repository" class="anchor" href="#delete-a-tag-from-local-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Delete a tag from local repository</h3>
+
+<div class="highlight highlight-source-shell"><pre>git tag -d sample-tag</pre></div>
+
+<h4>
+<a id="list-all-tags" class="anchor" href="#list-all-tags" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List all tags</h4>
+
+<div class="highlight highlight-source-shell"><pre>git tag -l</pre></div>
 
 <h4>
 <a id="sync-list-of-remote-branches" class="anchor" href="#sync-list-of-remote-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sync list of remote branches</h4>
@@ -189,7 +216,7 @@ git prune</pre></div>
 <div class="highlight highlight-source-shell"><pre>git rev-parse --short <span class="pl-k">&lt;</span>sha<span class="pl-k">&gt;</span></pre></div>
 
 <h4>
-<a id="my-aliases" class="anchor" href="#my-aliases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>My aliases</h4>
+<a id="useful-aliases" class="anchor" href="#useful-aliases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Useful aliases</h4>
 
 <div class="highlight highlight-source-shell"><pre>git config --global <span class="pl-c1">alias</span>.aa <span class="pl-s"><span class="pl-pds">"</span>add --all<span class="pl-pds">"</span></span>
 git config --global <span class="pl-c1">alias</span>.ai <span class="pl-s"><span class="pl-pds">"</span>add --interactive<span class="pl-pds">"</span></span>
@@ -242,20 +269,33 @@ git config --global <span class="pl-c1">alias</span>.st <span class="pl-s"><span
 <h4>
 <a id="global-username--email" class="anchor" href="#global-username--email" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Global username &amp; email</h4>
 
-<div class="highlight highlight-source-shell"><pre>git config --global user.name <span class="pl-s"><span class="pl-pds">"</span>Jakub Pawlowicz<span class="pl-pds">"</span></span>
-git config --global user.email <span class="pl-s"><span class="pl-pds">'</span>&lt;email&gt;<span class="pl-pds">'</span></span></pre></div>
+<div class="highlight highlight-source-shell"><pre>git config --global user.name <span class="pl-s"><span class="pl-pds">"</span>Lennon Jesus<span class="pl-pds">"</span></span>
+git config --global user.email <span class="pl-s"><span class="pl-pds">'</span>you@mail.com<span class="pl-pds">'</span></span></pre></div>
 
 <h4>
 <a id="local-username--email" class="anchor" href="#local-username--email" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Local username &amp; email</h4>
 
-<div class="highlight highlight-source-shell"><pre>git config user.name <span class="pl-s"><span class="pl-pds">"</span>Jakub Pawlowicz<span class="pl-pds">"</span></span>
-git config user.email <span class="pl-s"><span class="pl-pds">'</span>&lt;email&gt;<span class="pl-pds">'</span></span></pre></div>
+<div class="highlight highlight-source-shell"><pre>git config user.name <span class="pl-s"><span class="pl-pds">"</span>Lennon Jesus<span class="pl-pds">"</span></span>
+git config user.email <span class="pl-s"><span class="pl-pds">'</span>you@mail.com<span class="pl-pds">'</span></span></pre></div>
+
+<h4>
+<a id="cache-password-using-git-credential-helper" class="anchor" href="#cache-password-using-git-credential-helper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cache Password (using git Credential Helper)</h4>
+
+<div class="highlight highlight-source-shell"><pre>git config --global credential.helper cache</pre></div>
 
 <h4>
 <a id="proxy-server" class="anchor" href="#proxy-server" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Proxy server</h4>
 
 <div class="highlight highlight-source-shell"><pre>git config --global http.proxy http://<span class="pl-k">&lt;</span>proxyuser<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>proxypwd<span class="pl-k">&gt;</span>@<span class="pl-k">&lt;</span>proxy.server.com<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>proxyport<span class="pl-k">&gt;</span>
 git config --global https.proxy http://<span class="pl-k">&lt;</span>proxyuser<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>proxypwd<span class="pl-k">&gt;</span>@<span class="pl-k">&lt;</span>proxy.server.com<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>proxyport<span class="pl-k">&gt;</span></pre></div>
+
+<h4>
+<a id="force-git-to-clone-with-https-instead-of-git-urls-useful-behind-proxies" class="anchor" href="#force-git-to-clone-with-https-instead-of-git-urls-useful-behind-proxies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Force git to clone with "https://" instead of "git://" urls (useful behind proxies)</h4>
+
+<div class="highlight highlight-source-shell"><pre>git config --global url.<span class="pl-s"><span class="pl-pds">"</span>https://<span class="pl-pds">"</span></span>.insteadOf git://</pre></div>
+
+<h4>
+<a id="color-settings" class="anchor" href="#color-settings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Color settings</h4>
 
 <div class="highlight highlight-source-shell"><pre>git config --global color.diff auto
 git config --global color.status auto
@@ -288,6 +328,11 @@ git config --global color.branch auto</pre></div>
 <a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h4>
 
 <p>This cheatsheet is a fork of <a href="https://github.com/jakubpawlowicz/git-cheat-sheet">git-cheat-sheet</a> from <a href="https://github.com/jakubpawlowicz">Jakub Pawlowicz</a></p>
+
+<h4>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LICENSE</h4>
+
+<p><a href="LICENSE">MIT</a></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/lennonjesus/git-cheatsheet">Git-cheatsheet</a> is maintained by <a href="https://github.com/lennonjesus">lennonjesus</a>.</span>
