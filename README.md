@@ -36,12 +36,12 @@ git push origin sample-tag
 
 ### Delete a tag from remote repository
 ```shell
-git push origin :sample-tag
+git push origin --delete sample-tag
 ```
 
 ### Delete a tag from local repository
 ```shell
-git tag -d sample-tag
+git tag --delete sample-tag
 ```
 
 #### List all tags
